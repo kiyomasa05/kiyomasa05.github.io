@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <title>MyPortfolio</title>
+  <script src="https://kit.fontawesome.com/cc92221ca2.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="header-logo">
+          <span>Kiyoma's Portfolio</span>
+        </div>
+        <nav>
+          <ul class="header-menu">
+            <li><a href="#about"><span>about</span></a></li>
+            <li><a href="#skill"><span>skill</span></a></li>
+            <li><a href="#work"><span>works</span></a></li>
+            <li><a href="#service"><span>service</span></a></li>
+            <li><a href="#contact"><span>contact</span></a></li>
+          </ul>
+        </nav>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+          <div id="nav-content">
+            <label id="nav-close2" for="nav-input"><span>閉じる</span></label>
+            <nav class="nav-menu">
+              <ul class="draw-menu">
+                <li><a href="#about"><span>about</span></a></li>
+                <li><a href="#skill"><span>skill</span></a></li>
+                <li><a href="#work"><span>works</span></a></li>
+                <li><a href="#service"><span>service</span></a></li>
+                <li><a href="#contact"><span>contact</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="page_top">
+    <a href="#top"></a>
+  </div>
+  <main>
+    <!-- top-wrapper -->
+    <div class="top-wrapper" id="top">
+      <div class="container">
+        <div class="main-massege">
+          <h3 class="h3">Welcome</h3>
+          <h1 class="h1">Kiyoma's Portfolio</h1>
+          <div class="btn">
+            <button type="button" onclick="location.href='#contact'" class="btn btn-outline-secondary btn-lg">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top-wrraper終わり -->
+    <!-- about -->
+    <div id="about" class="about-wrapper">
+      <div class="container">
+        <h2 class="text-center h2">About</h2>
+        <!-- about箱 -->
+        <div class="about">
+          <h3 class="p-3">Kiyoma</h3>
+          <div class="about-both row">
+            <!-- aboutleft -->
+            <div class="about-left col-sm-4">
+              <img class="rounded-circle" src="img/pro-icon.jpeg" alt="">
+              <p class="profile-text">出身：神奈川県<br>
+                趣味：<br>旅行、カラオケ、アニメ、<br>音楽フェス、ランニング...</p>
+            </div>
+            <!-- aboutright -->
+            <div class="about-right col-sm-7">
+              <p>こんにちは。きよまと申します。<br>
+                <br>
+                某”N”自動車関連会社に就職。<br>
+                入社3年目に役員に”とあるシステム開発”を提案。
+                「じゃあお前がやれ。」ということでプロジェクトに参画。<br>
+                しかし、皆さんがご存知のような状態でプロジェクト停止に笑<br>
+                サラリーマンという働き方に嫌気が指しました。<br>
+                今は、フロントサイドエンジニア&ブロガーを目指して勉強中です。<br>
+                行動力に強みを持っており、いいなと感じたことはすぐ飛びつくタイプの人間です。笑<br>
+                会社員の経験から、一般的なビジネスマナー、コミュニケーションスキルはあります。
+                皆様のお役に立てるよう精進してまいります。
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- about箱終わり -->
+        <div class="bobble-1 bobble"></div>
+        <div class="bobble-2 bobble"></div>
+        <div class="bobble-3 bobble"></div>
+        <div class="bobble-4 bobble"></div>
+        <div class="bobble-5 bobble"></div>
+        <div class="bobble-6 bobble"></div>
+      </div>
+    </div>
+    <!-- about終わり -->
+    <!-- スキル -->
+    <div id="skill" class="skill-wrapper">
+      <div class="container">
+        <h2 class="text-center mb-5 font-weight-bold">Skill</h2>
+        <!-- skill箱  gridデザイン3*3-->
+        <div class="skill">
+          <div class="skill-zone">
+            <div class="item">
+              <img src="img/html5-1841458_1920.png" alt="">
+              <!-- <i class="fab fa-html5 fa-2x fa-fw"></i> -->
+              <p>HTML5</p>
+            </div>
+            <div class="item">
+              <img src="img/css3-1841590_1920.png" alt="">
+              <!-- <i class="fab fa-css3-alt fa-2x fa-fw"></i> -->
+              <p>CSS3</p>
+            </div>
+            <div class="item">
+              <img src="img/bootstrap-stack.png" alt="">
+              <!-- <i class="fab fa-bootstrap fa-2x fa-fw"></i> -->
+              <p>Bootstrap</p>
+            </div>
+            <div class="item">
+              <img src="img/javascript-736400_1280.png" alt="">
+              <!-- <i class="fab fa-js-square fa-2x fa-fw"></i> -->
+              <p>JavaScript</p>
+            </div>
+            <div class="item">
+              <img src="img/jquery-444684_1280.png" alt="">
+              <!-- <i class="fab fa-js-square fa-2x fa-fw"></i> -->
+              <p>jQuery</p>
+            </div>
+            <div class="item">
+              <img src="img/wordpress-3090999_1280.png" alt="">
+              <!-- <i class="fab fa-wordpress-simple fa-2x fa-fw"></i> -->
+              <p>WordPress</p>
+            </div>
+          </div>
+        </div>
+        <!-- skill箱終わり -->
+      </div>
+    </div>
+    <!-- スキル終わり -->
+    <!-- ワーク -->
+    <div id="work" class="work">
+      <div class="container">
+        <h2 class="text-center mb-5 font-weight-bold">Work</h2>
+        <section class="swiper-container loading">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(img/work1.png)">
+              <!-- <img src="img/work1.png" class="entity-img" /> -->
+              <div class="content">
+                <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Progate</p>
+                <span class="caption" data-swiper-parallax="-20%">progateで学びました。</span>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/work2.png)">
+              <!-- <img src="img/work2.png" class="entity-img" /> -->
+              <div class="content">
+                <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Dental Clinic</p>
+                <span class="caption" data-swiper-parallax="-20%">架空の歯科医院のHPを作成しました。</span>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/work3.png)">
+              <!-- <img src="img/work3.png" class="entity-img" /> -->
+              <div class="content">
+                <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">isara</p>
+                <span class="caption" data-swiper-parallax="-20%">isaraの模写を行いました。</span>
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/work4.png)">
+              <!-- <img src="img/work4.png" class="entity-img" /> -->
+              <div class="content">
+                <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">portfolio </p>
+                <span class="caption" data-swiper-parallax="-20%">Portfolioを作成しました。</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-black"></div>
+          <div class="swiper-button-next swiper-button-black"></div>
+        </section>
+        <div class="work-more">
+          <a href="work.html">全てのworkを見る</a>
+        </div>
+      </div>
+    </div>
+    <!-- ワーク終わり -->
+    <!-- サービス -->
+    <div id="service" class="service">
+      <div class="container">
+        <h2 class="text-center mb-5 font-weight-bold">Service</h2>
+        <div class="service-grid">
+          <div class="service-item">
+            <h3>LP作成</h3>
+            <div class="shadow"></div>
+            <div class="service-text">
+              <p>LPの作成を承ります</p>
+              <p>より成果に繋がるよう動きのあるLPもご提案可能です</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <h3>コーディング代行</h3>
+            <div class="shadow"></div>
+            <div class="service-text">
+              <p>コーディングの代行を承ります</p>
+              <p>デザインイメージや構成など事前にご提供ください。</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <h3>WPテーマ作成</h3>
+            <div class="shadow"></div>
+            <div class="service-text">
+              <p>WPテーマの作成を承ります</p>
+              <p>貴社のcmsの保守管理も承ります</p>
+            </div>
+          </div>
+        </div>
+        <div class="to-be">To-be</div>
+        <p class="text-center text-info">その他ご要望等ご相談ください</p>
+      </div>
+    </div>
+    <!-- サービス終わり -->
+    <!-- コンタクト -->
+    <div id="contact" class="contact">
+      <div class="container">
+        <h2 class="text-center mb-5 font-weight-bold">Contact</h2>
+        <section class="contact-wrap mb-5">
+          <form action="" class="contact-form">
+            <div class="col-sm-12">
+              <div class="input-block">
+                <label for="">Name</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="input-block">
+                <label for="">Email</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="input-block">
+                <label for="">Message</label>
+                <textarea cols="30" rows="10" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-12 mb-5">
+              <button class="square-button mb-5">送信</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+    <!-- コンタクト終わり -->
+  </main>
+  <footer>
+    <div class="footer1">
+      <div class="container">
+        <h3 class="text-center h3 p-3 text-white">最後に</h3>
+        <div class="footer row bg-light">
+          <div class="footer-text col-sm-7">
+            <h4>ポートフォリオ を閲覧いただきありがとうございます</h4>
+            <p>3月より自分のペースで始めた学習の内容が詰まったポートフォリオです。
+            </p>
+            <p>自分のスキルを磨きながら精進していきたいと思っています。</p>
+            <p>
+              ポートフォリオ がいいなっと思った方はぜひフォローをお願いします。</p>
+            <p>毎日の積み上げや、勉強のためになることなどを発信しています。</p>
+            <p>また、ツイッタープロフィール内でブログも公開しているので
+              よろしければそちらもご覧ください！
+            </p>
+            <p>
+              <a target="_blank" href="https://twitter.com/kiyomas75923521/with_replies"><i
+                  class="fab fa-twitter fa-2x"></i></a>
+              <span class="font-weight-bold">Follow me!!</span>
+            </p>
+          </div>
+          <div class="twitter col-sm-4">
+            <a class="twitter-timeline" data-lang="ja" data-width="400" data-height="400"
+              href="https://twitter.com/kiyomas75923521?ref_src=twsrc%5Etfw">Tweets by kiyomas75923521</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer2 text-light">
+      <div class="container text-center">
+        <small>Copy right kiyoma</small>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
